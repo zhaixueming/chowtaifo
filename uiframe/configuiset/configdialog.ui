@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfigDialog</class>
+ <widget class="QDialog" name="ConfigDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>850</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1140</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="titlebar" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="titlebar_layout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="mainWidget" native="true">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QPushButton" name="ButtonSave">
+         <property name="geometry">
+          <rect>
+           <x>650</x>
+           <y>510</y>
+           <width>80</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #006db2;
+border-radius: 4px;
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>保存</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="ButtonCancel">
+         <property name="geometry">
+          <rect>
+           <x>760</x>
+           <y>510</y>
+           <width>80</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: white;
+border: 1px solid rgba(0,0,0,0.3);
+border-radius: 4px;
+color: rgba(0,0,0,0.5);</string>
+         </property>
+         <property name="text">
+          <string>取消</string>
+         </property>
+        </widget>
+        <widget class="Line" name="line">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>-60</y>
+           <width>1141</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>850</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>PLC</string>
+         </property>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>91</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>PLC IP地址</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditPLCIP">
+          <property name="geometry">
+           <rect>
+            <x>119</x>
+            <y>20</y>
+            <width>211</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditstate">
+          <property name="geometry">
+           <rect>
+            <x>710</x>
+            <y>60</y>
+            <width>60</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditrestoration">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>60</y>
+            <width>60</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_56">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>60</y>
+            <width>111</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>允许读取RFID</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditrotate">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>60</y>
+            <width>60</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditallow">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>60</y>
+            <width>60</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_35">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>60</y>
+            <width>81</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>旋转模式</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_34">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>60</y>
+            <width>71</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>复位完成</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_37">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>60</y>
+            <width>71</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>设备状态</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_55">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>100</y>
+            <width>71</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>RFID完成</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_39">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>100</y>
+            <width>71</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>检测结果</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditresult">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>100</y>
+            <width>60</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditaccomplish">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>100</y>
+            <width>60</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_41">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>100</y>
+            <width>71</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>允许旋转</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditAllowed">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>100</y>
+            <width>60</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>851</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>GroupBox</string>
+         </property>
+         <widget class="QLineEdit" name="lineEditstereo">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>30</y>
+            <width>141</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="labelmateial">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>30</y>
+            <width>81</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>3D相机 IP</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditside2">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>110</y>
+            <width>101</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdittop">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>70</y>
+            <width>101</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="labelstart1">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>70</y>
+            <width>131</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>上方面阵相机编号</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_54">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>110</y>
+            <width>121</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>侧2面阵相机编号</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_53">
+          <property name="geometry">
+           <rect>
+            <x>590</x>
+            <y>70</y>
+            <width>121</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>侧1面阵相机编号</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditside1">
+          <property name="geometry">
+           <rect>
+            <x>730</x>
+            <y>70</y>
+            <width>100</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditin">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>70</y>
+            <width>100</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_40">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>70</y>
+            <width>131</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>内部面阵相机编号</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_57">
+          <property name="geometry">
+           <rect>
+            <x>590</x>
+            <y>110</y>
+            <width>121</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>侧4面阵相机编号</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_58">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>110</y>
+            <width>121</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>侧3面阵相机编号</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditside4">
+          <property name="geometry">
+           <rect>
+            <x>730</x>
+            <y>110</y>
+            <width>101</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditside3">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>110</y>
+            <width>100</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>300</y>
+           <width>851</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>GroupBox</string>
+         </property>
+         <widget class="QPushButton" name="Buttonside4">
+          <property name="geometry">
+           <rect>
+            <x>770</x>
+            <y>140</y>
+            <width>70</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgba(0,0,0,0.30);
+	border-radius: 4px;
+	color: rgba(0,0,0,0.50);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditside1Save">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>100</y>
+            <width>151</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditside4Save">
+          <property name="geometry">
+           <rect>
+            <x>610</x>
+            <y>140</y>
+            <width>151</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Buttontop">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>60</y>
+            <width>70</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgba(0,0,0,0.30);
+	border-radius: 4px;
+	color: rgba(0,0,0,0.50);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>161</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>侧1面阵相机存图地址</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditinSave">
+          <property name="geometry">
+           <rect>
+            <x>610</x>
+            <y>60</y>
+            <width>151</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>60</y>
+            <width>161</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>上方面阵相机存图地址</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditside2Save">
+          <property name="geometry">
+           <rect>
+            <x>610</x>
+            <y>100</y>
+            <width>151</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>140</y>
+            <width>161</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>侧4面阵相机存图地址</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Buttonin">
+          <property name="geometry">
+           <rect>
+            <x>770</x>
+            <y>60</y>
+            <width>70</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgba(0,0,0,0.30);
+	border-radius: 4px;
+	color: rgba(0,0,0,0.50);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdittopSave">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>60</y>
+            <width>151</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>60</y>
+            <width>171</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>内部面阵相机存图地址</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Buttonside1">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>100</y>
+            <width>70</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgba(0,0,0,0.30);
+	border-radius: 4px;
+	color: rgba(0,0,0,0.50);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>21</x>
+            <y>140</y>
+            <width>161</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>侧3面阵相机存图地址</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Buttonside2">
+          <property name="geometry">
+           <rect>
+            <x>770</x>
+            <y>100</y>
+            <width>70</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgba(0,0,0,0.30);
+	border-radius: 4px;
+	color: rgba(0,0,0,0.50);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditside3Save">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>140</y>
+            <width>151</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>100</y>
+            <width>171</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>侧2面阵相机存图地址</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Buttonside3">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>140</y>
+            <width>70</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgba(0,0,0,0.30);
+	border-radius: 4px;
+	color: rgba(0,0,0,0.50);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditstereoSave">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>20</y>
+            <width>151</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #f7f9fa;
+	border-radius: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>20</y>
+            <width>131</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgba(0,0,0,0.5);</string>
+          </property>
+          <property name="text">
+           <string>3D相机存图地址</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Buttonstereo">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>20</y>
+            <width>70</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid rgba(0,0,0,0.30);
+	border-radius: 4px;
+	color: rgba(0,0,0,0.50);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </widget>
+        <zorder>line</zorder>
+        <zorder>ButtonSave</zorder>
+        <zorder>ButtonCancel</zorder>
+        <zorder>groupBox</zorder>
+        <zorder>groupBox_2</zorder>
+        <zorder>groupBox_3</zorder>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../CHOWTAIFOOK_Detection.qrc"/>
+ </resources>
+ <connections/>
+</ui>
